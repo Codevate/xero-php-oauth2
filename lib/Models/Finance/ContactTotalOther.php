@@ -191,7 +191,7 @@ class ContactTotalOther implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['total_outstanding_aged'] = isset($data['total_outstanding_aged']) ? $data['total_outstanding_aged'] : null;
         $this->container['total_voided'] = isset($data['total_voided']) ? $data['total_voided'] : null;

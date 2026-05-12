@@ -181,7 +181,7 @@ class AccountsReceivable implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['outstanding'] = isset($data['outstanding']) ? $data['outstanding'] : null;
         $this->container['overdue'] = isset($data['overdue']) ? $data['overdue'] : null;

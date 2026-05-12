@@ -176,7 +176,7 @@ class BankTransfers implements ModelInterface, ArrayAccess, \Countable, \Iterato
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['bank_transfers'] = isset($data['bank_transfers']) ? $data['bank_transfers'] : null;
     }

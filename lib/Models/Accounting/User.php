@@ -233,7 +233,7 @@ class User implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['user_id'] = isset($data['user_id']) ? $data['user_id'] : null;
         $this->container['email_address'] = isset($data['email_address']) ? $data['email_address'] : null;

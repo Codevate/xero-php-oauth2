@@ -196,7 +196,7 @@ class TimesheetLine implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['timesheet_line_id'] = isset($data['timesheet_line_id']) ? $data['timesheet_line_id'] : null;
         $this->container['date'] = isset($data['date']) ? $data['date'] : null;

@@ -176,7 +176,7 @@ class TaxRates implements ModelInterface, ArrayAccess, \Countable, \IteratorAggr
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['tax_rates'] = isset($data['tax_rates']) ? $data['tax_rates'] : null;
     }

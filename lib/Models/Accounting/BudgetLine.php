@@ -186,7 +186,7 @@ class BudgetLine implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['account_id'] = isset($data['account_id']) ? $data['account_id'] : null;
         $this->container['account_code'] = isset($data['account_code']) ? $data['account_code'] : null;

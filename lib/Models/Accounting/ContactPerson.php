@@ -191,7 +191,7 @@ class ContactPerson implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['first_name'] = isset($data['first_name']) ? $data['first_name'] : null;
         $this->container['last_name'] = isset($data['last_name']) ? $data['last_name'] : null;

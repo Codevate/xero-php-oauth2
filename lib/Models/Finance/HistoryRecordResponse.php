@@ -196,7 +196,7 @@ class HistoryRecordResponse implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['changes'] = isset($data['changes']) ? $data['changes'] : null;
         $this->container['date_utc_string'] = isset($data['date_utc_string']) ? $data['date_utc_string'] : null;

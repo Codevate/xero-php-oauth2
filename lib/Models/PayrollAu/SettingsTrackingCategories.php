@@ -182,7 +182,7 @@ class SettingsTrackingCategories implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['employee_groups'] = isset($data['employee_groups']) ? $data['employee_groups'] : null;
         $this->container['timesheet_categories'] = isset($data['timesheet_categories']) ? $data['timesheet_categories'] : null;

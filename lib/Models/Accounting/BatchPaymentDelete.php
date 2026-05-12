@@ -181,7 +181,7 @@ class BatchPaymentDelete implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['batch_payment_id'] = isset($data['batch_payment_id']) ? $data['batch_payment_id'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : 'DELETED';

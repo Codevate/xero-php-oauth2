@@ -189,7 +189,7 @@ class NICategoryOneOf1 implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['ni_category'] = isset($data['ni_category']) ? $data['ni_category'] : null;
     }

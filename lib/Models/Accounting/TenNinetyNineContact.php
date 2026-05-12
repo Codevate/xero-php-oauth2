@@ -321,7 +321,7 @@ class TenNinetyNineContact implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['box1'] = isset($data['box1']) ? $data['box1'] : null;
         $this->container['box2'] = isset($data['box2']) ? $data['box2'] : null;

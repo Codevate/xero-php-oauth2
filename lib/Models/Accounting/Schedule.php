@@ -244,7 +244,7 @@ class Schedule implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['period'] = isset($data['period']) ? $data['period'] : null;
         $this->container['unit'] = isset($data['unit']) ? $data['unit'] : null;

@@ -216,7 +216,7 @@ class ReportWithRow implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['report_id'] = isset($data['report_id']) ? $data['report_id'] : null;
         $this->container['report_name'] = isset($data['report_name']) ? $data['report_name'] : null;

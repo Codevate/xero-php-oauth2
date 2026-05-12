@@ -256,7 +256,7 @@ class StatementLinesResponse implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['unreconciled_amount_pos'] = isset($data['unreconciled_amount_pos']) ? $data['unreconciled_amount_pos'] : null;
         $this->container['unreconciled_amount_neg'] = isset($data['unreconciled_amount_neg']) ? $data['unreconciled_amount_neg'] : null;

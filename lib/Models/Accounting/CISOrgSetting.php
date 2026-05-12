@@ -186,7 +186,7 @@ class CISOrgSetting implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['cis_contractor_enabled'] = isset($data['cis_contractor_enabled']) ? $data['cis_contractor_enabled'] : null;
         $this->container['cis_sub_contractor_enabled'] = isset($data['cis_sub_contractor_enabled']) ? $data['cis_sub_contractor_enabled'] : null;

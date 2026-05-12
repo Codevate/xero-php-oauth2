@@ -226,7 +226,7 @@ class LeaveApplication implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['leave_application_id'] = isset($data['leave_application_id']) ? $data['leave_application_id'] : null;
         $this->container['employee_id'] = isset($data['employee_id']) ? $data['employee_id'] : null;

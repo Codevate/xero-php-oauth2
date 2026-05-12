@@ -216,7 +216,7 @@ class SuperannuationLine implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['super_membership_id'] = isset($data['super_membership_id']) ? $data['super_membership_id'] : null;
         $this->container['contribution_type'] = isset($data['contribution_type']) ? $data['contribution_type'] : null;

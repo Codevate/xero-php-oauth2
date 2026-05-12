@@ -181,7 +181,7 @@ class GrossEarningsHistory implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['days_paid'] = isset($data['days_paid']) ? $data['days_paid'] : null;
         $this->container['unpaid_weeks'] = isset($data['unpaid_weeks']) ? $data['unpaid_weeks'] : null;

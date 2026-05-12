@@ -186,7 +186,7 @@ class UserActivitiesResponse implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['organisation_id'] = isset($data['organisation_id']) ? $data['organisation_id'] : null;
         $this->container['data_month'] = isset($data['data_month']) ? $data['data_month'] : null;

@@ -226,7 +226,7 @@ class EmployeeTax implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['starter_type'] = isset($data['starter_type']) ? $data['starter_type'] : null;
         $this->container['starter_declaration'] = isset($data['starter_declaration']) ? $data['starter_declaration'] : null;
